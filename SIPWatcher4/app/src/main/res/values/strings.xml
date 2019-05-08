@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">SIPWatcher</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">SIPWatcher</string>
+    <string name="nav_header_subtitle">Captures and displays SIP messages</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+
+    <!-- Text view elements -->
+    <string name="main_btn_2">Start capture?</string>
+    <string name="main_btn_1">Check VoLTE compatibility (requires root)</string>
+    <string name="main_text_1">Inf rmnet:</string>
+    <string name="main_text_2">tshark:</string>
+    <string name="main_text_3">tcpdump:</string>
+    <string name="main_text_4">IPsec SA count:</string>
+    <string name="main_text_5">IPsec protocol:</string>
+    <string name="main_text_6">IPsec mode:</string>
+    <string name="main_text_7">Auth cipher:</string>
+    <string name="main_text_8">Auth key:</string>
+    <string name="main_text_9">Encr cipher:</string>
+    <string name="main_text_10">Encr key:</string>
+    <string name="main_value_1"> </string>
+    <string name="main_value_2"> </string>
+    <string name="main_value_3"> </string>
+    <string name="main_value_4"> </string>
+    <string name="main_value_5"> </string>
+    <string name="main_value_6"> </string>
+    <string name="main_value_7"> </string>
+    <string name="main_value_8"> </string>
+    <string name="main_value_9"> </string>
+    <string name="main_value_10"> </string>
+
+
+
+</resources>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id                   = "@+id/layout_main_contraint"
+    xmlns:android                = "http://schemas.android.com/apk/res/android"
+    xmlns:app                    = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools                  = "http://schemas.android.com/tools"
+    android:layout_width         = "match_parent"
+    android:layout_height        = "match_parent"
+    app:layout_behavior          = "@string/appbar_scrolling_view_behavior"
+    tools:context                = ".MainActivity"
+    tools:showIn                 = "@layout/app_bar_main"
+    android:animateLayoutChanges = "true"
+    >
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id            = "@+id/layout_in_main_1"
+        xmlns:android         = "http://schemas.android.com/apk/res/android"
+        xmlns:app             = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools           = "http://schemas.android.com/tools"
+        android:layout_width  = "match_parent"
+        android:layout_height = "wrap_content"
+        app:layout_behavior   = "@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf     = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf     = "parent"
+
+        >
+
+        <!-- Check/verify button -->
+        <Button
+            android:id                              = "@+id/btn1"
+            android:layout_width                    = "match_parent"
+            android:layout_height                   = "78dp"
+            android:layout_marginEnd                = "16dp"
+            android:layout_marginStart              = "16dp"
+            android:layout_marginTop                = "10dp"
+            android:background                      = "@color/colorPrimary"
+            android:onClick                         = "onclickBtnVolteCompat"
+            android:text                            = "@string/main_btn_1"
+            android:textColor                       = "@android:color/white"
+            android:visibility                      = "visible"
+            app:layout_constraintEnd_toEndOf        = "parent"
+            app:layout_constraintStart_toStartOf    = "parent"
+            app:layout_constraintTop_toTopOf        = "parent" />
+
+        <!-- RMNET1 interface text -->
+        <TextView
+            android:id                              = "@+id/text_1"
+            android:layout_width                    = "wrap_content"
+            android:layout_height                   = "wrap_content"
+            android:layout_marginStart              = "16dp"
+            android:layout_marginTop                = "8dp"
+            android:text                            = "@string/main_text_1"
+            app:layout_constraintTop_toBottomOf     = "@+id/btn1"
+            app:layout_constraintStart_toStartOf    = "parent" />
+            <TextView
+                android:id                          = "@+id/value_1"
+                android:layout_width                = "wrap_content"
+                android:layout_height               = "wrap_content"
+                android:layout_marginStart          = "8dp"
+                android:layout_marginTop            = "8dp"
+                android:text                        = "@string/main_value_1"
+                app:layout_constraintStart_toEndOf  = "@+id/text_4"
+                app:layout_constraintTop_toBottomOf = "@+id/btn1" />
+
+
+        <!-- tcpdump -->
+        <TextView
+            android:id                              = "@+id/text_2"
+            android:layout_width                    = "wrap_content"
+            android:layout_height                   = "wrap_content"
+            android:layout_marginStart              = "16dp"
+            android:layout_marginTop                = "4dp"
+            android:text                            = "@string/main_text_2"
+            app:layout_constraintTop_toBottomOf     = "@+id/text_1"
+            app:layout_constraintStart_toStartOf    = "parent" />
+            <TextView
+                android:id                          = "@+id/value_2"
+                android:layout_width                = "wrap_content"
+                android:layout_height               = "wrap_content"
+                android:layout_marginStart          = "8dp"
+                android:layout_marginTop            = "4dp"
+                android:layout_marginEnd            = "8dp"
+                android:textAllCaps                 = "true"
+                android:text                        = "@string/main_value_2"
+                app:layout_constraintStart_toEndOf  = "@+id/text_4"
+                app:layout_constraintTop_toBottomOf = "@+id/value_1" />
+
+        <!-- tcpdump -->
+        <TextView
+            android:id                              = "@+id/text_3"
+            android:layout_width                    = "wrap_content"
+            android:layout_height                   = "wrap_content"
+            android:layout_marginStart              = "16dp"
+            android:layout_marginTop                = "4dp"
+            android:text                            = "@string/main_text_3"
+            app:layout_constraintTop_toBottomOf     = "@+id/text_2"
+            app:layout_constraintStart_toStartOf    = "parent" />
+            <TextView
+                android:id                          = "@+id/value_3"
+                android:layout_width                = "wrap_content"
+                android:layout_height               = "wrap_content"
+                android:layout_marginStart          = "8dp"
+                android:layout_marginTop            = "4dp"
+                android:layout_marginEnd            = "8dp"
+                android:textAllCaps                 = "true"
+                android:text                        = "@string/main_value_3"
+                app:layout_constraintStart_toEndOf  = "@+id/text_4"
+                app:layout_constraintTop_toBottomOf = "@+id/value_2" />
+
+        <!-- SA Count -->
+        <TextView
+            android:id                              = "@+id/text_4"
+            android:layout_width                    = "wrap_content"
+            android:layout_height                   = "wrap_content"
+            android:layout_marginStart              = "16dp"
+            android:layout_marginTop                = "4dp"
+            android:text                            = "@string/main_text_4"
+            app:layout_constraintTop_toBottomOf     = "@+id/text_3"
+            app:layout_constraintStart_toStartOf    = "parent" />
+            <TextView
+                android:id                          = "@+id/value_4"
+                android:layout_width                = "wrap_content"
+                android:layout_height               = "wrap_content"
+                android:layout_marginStart          = "8dp"
+                android:layout_marginTop            = "4dp"
+                android:text                        = "@string/main_value_4"
+                app:layout_constraintStart_toEndOf  = "@+id/text_4"
+                app:layout_constraintTop_toBottomOf = "@+id/value_3" />
+
+        <!-- IPsec protocol -->
+        <TextView
+            android:id                              = "@+id/text_5"
+            android:layout_width                    = "wrap_content"
+            android:layout_height                   = "wrap_content"
+            android:layout_marginStart              = "16dp"
+            android:layout_marginTop                = "4dp"
+            android:text                            = "@string/main_text_5"
+            app:layout_constraintTop_toBottomOf     = "@+id/text_4"
+            app:layout_constraintStart_toStartOf    = "parent" />
+            <TextView
+                android:id                          = "@+id/value_5"
+                android:layout_width                = "wrap_content"
+                android:layout_height               = "wrap_content"
+                android:layout_marginStart          = "8dp"
+                android:layout_marginTop            = "4dp"
+                android:layout_marginEnd            = "8dp"
+                android:textAllCaps                 = "true"
+                android:text                        = "@string/main_value_5"
+                app:layout_constraintStart_toEndOf  = "@+id/text_4"
+                app:layout_constraintTop_toBottomOf = "@+id/value_4" />
+
+        <!-- IPsec mode -->
+        <TextView
+            android:id                              = "@+id/text_6"
+            android:layout_width                    = "wrap_content"
+            android:layout_height                   = "wrap_content"
+            android:layout_marginStart              = "16dp"
+            android:layout_marginTop                = "4dp"
+            android:text                            = "@string/main_text_6"
+            app:layout_constraintTop_toBottomOf     = "@+id/text_5"
+            app:layout_constraintStart_toStartOf    = "parent" />
+            <TextView
+                android:id                          = "@+id/value_6"
+                android:layout_width                = "wrap_content"
+                android:layout_height               = "wrap_content"
+                android:layout_marginStart          = "8dp"
+                android:layout_marginTop            = "4dp"
+                android:layout_marginEnd            = "8dp"
+                android:text                        = "@string/main_value_6"
+                app:layout_constraintStart_toEndOf  = "@+id/text_4"
+                app:layout_constraintTop_toBottomOf = "@+id/value_5" />
+
+        <!-- Authentication cipher -->
+        <TextView
+            android:id                              = "@+id/text_7"
+            android:layout_width                    = "wrap_content"
+            android:layout_height                   = "wrap_content"
+            android:layout_marginStart              = "16dp"
+            android:layout_marginTop                = "4dp"
+            android:text                            = "@string/main_text_7"
+            app:layout_constraintTop_toBottomOf     = "@+id/text_6"
+            app:layout_constraintStart_toStartOf    = "parent" />
+            <TextView
+                android:id                          = "@+id/value_7"
+                android:layout_width                = "wrap_content"
+                android:layout_height               = "wrap_content"
+                android:layout_marginStart          = "8dp"
+                android:layout_marginTop            = "4dp"
+                android:text                        = "@string/main_value_7"
+                app:layout_constraintStart_toEndOf  = "@+id/text_4"
+                app:layout_constraintTop_toBottomOf = "@+id/value_6" />
+
+        <!-- Authentication key -->
+        <TextView
+            android:id                              = "@+id/text_8"
+            android:layout_width                    = "wrap_content"
+            android:layout_height                   = "wrap_content"
+            android:layout_marginStart              = "16dp"
+            android:layout_marginTop                = "4dp"
+            android:text                            = "@string/main_text_8"
+            app:layout_constraintTop_toBottomOf     = "@+id/text_7"
+            app:layout_constraintStart_toStartOf    = "parent" />
+            <TextView
+                android:id                          = "@+id/value_8"
+                android:layout_width                = "wrap_content"
+                android:layout_height               = "wrap_content"
+                android:layout_marginStart          = "8dp"
+                android:layout_marginTop            = "4dp"
+                android:layout_marginEnd            = "8dp"
+                android:text                        = "@string/main_value_8"
+                app:layout_constraintStart_toEndOf  = "@+id/text_8"
+                app:layout_constraintTop_toBottomOf = "@+id/value_7" />
+
+        <!-- Encryption cipher -->
+        <TextView
+            android:id                              = "@+id/text_9"
+            android:layout_width                    = "wrap_content"
+            android:layout_height                   = "wrap_content"
+            android:layout_marginStart              = "16dp"
+            android:layout_marginTop                = "4dp"
+            android:text                            = "@string/main_text_9"
+            app:layout_constraintStart_toStartOf    = "parent"
+            app:layout_constraintTop_toBottomOf     = "@+id/value_8" />
+            <TextView
+                android:id                          = "@+id/value_9"
+                android:layout_width                = "wrap_content"
+                android:layout_height               = "wrap_content"
+                android:layout_marginTop            = "4dp"
+                android:layout_marginStart          = "8dp"
+                android:text                        = "@string/main_value_9"
+                app:layout_constraintStart_toEndOf  = "@+id/text_4"
+                app:layout_constraintTop_toBottomOf = "@+id/value_8" />
+
+        <!-- Encryption key -->
+        <TextView
+            android:id                              = "@+id/text_10"
+            android:layout_width                    = "wrap_content"
+            android:layout_height                   = "wrap_content"
+            android:layout_marginStart              = "16dp"
+            android:layout_marginTop                = "4dp"
+            android:text                            = "@string/main_text_10"
+            app:layout_constraintTop_toBottomOf     = "@+id/text_9"
+            app:layout_constraintStart_toStartOf    = "parent" />
+            <TextView
+                android:id                          = "@+id/value_10"
+                android:layout_width                = "wrap_content"
+                android:layout_height               = "wrap_content"
+                android:layout_marginStart          = "8dp"
+                android:layout_marginTop            = "4dp"
+                android:layout_marginEnd            = "8dp"
+                android:text                        = "@string/main_value_10"
+                app:layout_constraintStart_toEndOf  = "@+id/text_10"
+                app:layout_constraintTop_toBottomOf = "@+id/value_9" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android                       = "http://schemas.android.com/apk/res/android"
+        xmlns:app                           = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools                         = "http://schemas.android.com/tools"
+        android:id                          = "@+id/layout_in_main_2"
+        android:layout_width                = "match_parent"
+        android:layout_height               = "match_parent"
+        android:layout_marginEnd            = "2dp"
+        android:layout_marginStart          = "2dp"
+        android:visibility                  = "invisible"
+        app:layout_constraintTop_toBottomOf = "@+id/layout_in_main_1">
+
+        <Button
+            android:id                           = "@+id/btn2"
+            android:layout_width                 = "match_parent"
+            android:layout_height                = "78dp"
+            android:layout_marginEnd             = "14dp"
+            android:layout_marginStart           = "14dp"
+            android:layout_marginTop             = "10dp"
+            android:background                   = "@color/colorAccent"
+            android:onClick                      = "onclickStartCapture"
+            android:text                         = "@string/main_btn_2"
+            android:textColor                    = "@android:color/white"
+            android:visibility                   = "visible"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf     = "@+id/layout_in_main_2" />
+
+        <ExpandableListView
+            android:id                              = "@+id/lvExp"
+            android:visibility                      = "invisible"
+            android:layout_width                    = "match_parent"
+            android:layout_height                   = "0dp"
+            android:layout_marginTop                = "10dp"
+            android:paddingBottom                   = "4dp"
+            android:animateLayoutChanges            = "true"
+            app:layout_constraintStart_toStartOf    = "parent"
+            app:layout_constraintTop_toBottomOf     = "@+id/btn2"
+            app:layout_constraintBottom_toBottomOf  = "parent"
+            android:dividerHeight                   = "1px"
+            android:childDivider                    = "@color/transparent"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
+
